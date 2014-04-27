@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Selector.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Selector.cs" Line="24" Column="3" />
+      <File FileName="Assets/Scripts/ColorsGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ColorableButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ColorButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ColorableButtonMaker.cs" Line="20" Column="39" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Corey/ColoringBook/Assets/Scripts/ColorableButton.cs" line="21" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
