@@ -39,7 +39,8 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
-'Assets/Scripts/Click&Drag&Snap.cs'
+'Assets/Scripts/BucketSelector.cs'
+'Assets/Scripts/ClickDragSnap.cs'
 'Assets/Scripts/ColorButton.cs'
 'Assets/Scripts/Colorable.cs'
 'Assets/Scripts/ColorableButton.cs'

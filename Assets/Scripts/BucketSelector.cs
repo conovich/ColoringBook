@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Click&Drag&Snap : MonoBehaviour {
+public class BucketSelector: MonoBehaviour {
+	public GameObject SelectedBucket;
 
 	// Use this for initialization
 	void Start () {

@@ -15,14 +15,14 @@ public class ColorButton : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		myText.fontStyle = FontStyle.Italic;
+		//myText.fontStyle = FontStyle.Italic;
 	}
 
 	void OnMouseUp(){
-		myText.fontStyle = FontStyle.Normal;
+		/*myText.fontStyle = FontStyle.Normal;
 		if(Selector.Instance.selected != null){
 			SpriteRenderer selectedRenderer = Selector.Instance.selected.GetComponent<SpriteRenderer>();
 			selectedRenderer.color = myText.color;
-		}
+		}*/
 	}
 }
