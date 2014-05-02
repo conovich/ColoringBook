@@ -2,25 +2,35 @@
 using System.Collections;
 
 public class Bucket : MonoBehaviour {
-	public Sprite[] ColorBarPieces;
+	public ColorBar MyColorBar;
 	public Color MyColor;
-
-	private ParticleSystem[] myParticleSystems;
 
 	public int particleCount;
 
 	// Use this for initialization
 	void Start () {
-		myParticleSystems = (ParticleSystem[])GameObject.FindObjectsOfType<ParticleSystem>();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(particleCount == 3){
+			AddColorBarPiece();
+			particleCount = 0;
+		}
 	}
 
+	void OnCollisionEnter2D(Collision2D collision){
+		if(collision.gameObject.tag == gameObject.tag){ //colors match
+			particleCount++;
+		}
+	}
 
+	void AddColorBarPiece(){
+		MyColorBar.SetNextPieceColor(MyColor);
+	}
 
+	/*
 	private ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1000];
 	
 	void LateUpdate() {
@@ -39,9 +49,9 @@ public class Bucket : MonoBehaviour {
 						particleCount++;
 					}
 				}
-			}
+			}*/
 			//if not valid particles to enter the bucket...
-			else{
+			/*else{
 				for (int j = 0; j < particlesLength; j++){
 					//if a particle is super close to the bucket...
 					if((particles[j].position - transform.position).magnitude < 0.02){
@@ -49,7 +59,7 @@ public class Bucket : MonoBehaviour {
 					}
 				}
 			}
-
+*/
 			/*int length = particleSystem.GetParticles(particles);
 			int i = 0;
 			
@@ -61,9 +71,9 @@ public class Bucket : MonoBehaviour {
 			}
 			
 			particleSystem.SetParticles(particles, length); }*/
-		}
+		//}
 	
-}
+//}
 	
 	
 }

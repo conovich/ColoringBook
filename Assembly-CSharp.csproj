@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Bucket.cs" />
      <Compile Include="Assets\Scripts\BucketSelector.cs" />
      <Compile Include="Assets\Scripts\ClickDragSnap.cs" />
+     <Compile Include="Assets\Scripts\ColorBar.cs" />
      <Compile Include="Assets\Scripts\ColorButton.cs" />
      <Compile Include="Assets\Scripts\Colorable.cs" />
      <Compile Include="Assets\Scripts\ColorableButton.cs" />
@@ -56,6 +57,8 @@
      <Compile Include="Assets\Scripts\ColorsGUI.cs" />
      <Compile Include="Assets\Scripts\GlobalColors.cs" />
      <Compile Include="Assets\Scripts\LabelFollow.cs" />
+     <Compile Include="Assets\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Scripts\RainSpawner.cs" />
      <Compile Include="Assets\Scripts\Selector.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
