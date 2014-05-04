@@ -5,6 +5,8 @@ Project("{9A8DA270-0D7F-675A-7124-19E1D369F4A0}") = "ColoringBook", "Assembly-CS
 EndProject
 Project("{9A8DA270-0D7F-675A-7124-19E1D369F4A0}") = "ColoringBook", "Assembly-CSharp.csproj", "{34D614B3-FC03-F344-AA79-2B264CA6FA5C}"
 EndProject
+Project("{9A8DA270-0D7F-675A-7124-19E1D369F4A0}") = "ColoringBook", "Assembly-CSharp-Editor.csproj", "{F8B3BC90-970E-0EE2-DAC3-00D47411B95E}"
+EndProject
 Project("{9A8DA270-0D7F-675A-7124-19E1D369F4A0}") = "ColoringBook", "Assembly-UnityScript-firstpass.unityproj", "{6C3A4A9F-3639-1042-B2A7-FFF6F1B11BD2}"
 EndProject
 Project("{9A8DA270-0D7F-675A-7124-19E1D369F4A0}") = "ColoringBook", "Assembly-UnityScript-Editor.unityproj", "{66345DEB-9703-BC73-F432-45B1FC65A250}"
@@ -23,6 +25,10 @@ Global
 		{34D614B3-FC03-F344-AA79-2B264CA6FA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D614B3-FC03-F344-AA79-2B264CA6FA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D614B3-FC03-F344-AA79-2B264CA6FA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B3BC90-970E-0EE2-DAC3-00D47411B95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B3BC90-970E-0EE2-DAC3-00D47411B95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B3BC90-970E-0EE2-DAC3-00D47411B95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B3BC90-970E-0EE2-DAC3-00D47411B95E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6C3A4A9F-3639-1042-B2A7-FFF6F1B11BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6C3A4A9F-3639-1042-B2A7-FFF6F1B11BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C3A4A9F-3639-1042-B2A7-FFF6F1B11BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																									GlobalSection(MonoDevelopProperties) = preSolution
+																																											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

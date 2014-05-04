@@ -12,15 +12,15 @@
       <File FileName="Assets/Scripts/GlobalColors.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/RainSpawner.cs" Line="20" Column="46" />
       <File FileName="Assets/Scripts/ParticleCollision.cs" Line="18" Column="93" />
-      <File FileName="Assets/Scripts/ColorBar.cs" Line="22" Column="32" />
+      <File FileName="Assets/Scripts/ColorBar.cs" Line="41" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/Corey/ColoringBook/Assets/Scripts/ColorableButton.cs" line="21" />
-      <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="22" />
-      <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="28" />
+      <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="27" />
       <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="34" />
+      <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="40" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

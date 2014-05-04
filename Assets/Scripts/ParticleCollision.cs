@@ -16,7 +16,7 @@ public class ParticleCollision : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision){
 		if(collision.gameObject.name != ParentName && collision.gameObject.name != gameObject.name){
-			Debug.Log(collision.gameObject.name);
+			//Debug.Log(collision.gameObject.name);
 			Die();
 		}
 	}
