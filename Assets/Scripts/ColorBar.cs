@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ColorBar : MonoBehaviour {
 	public GameObject[] Pieces;
+	public int NumActive;
 
 
 	// Use this for initialization
@@ -25,6 +26,7 @@ public class ColorBar : MonoBehaviour {
 			SpriteRenderer pieceRenderer = Pieces[i].GetComponent<SpriteRenderer>();
 			if(pieceRenderer.color == Color.white){
 				SetPieceColor(i, newColor);
+				NumActive++;
 				return;
 			}
 		}
@@ -35,6 +37,7 @@ public class ColorBar : MonoBehaviour {
 			SpriteRenderer pieceRenderer = Pieces[i].GetComponent<SpriteRenderer>();
 			if(pieceRenderer.color != Color.white){
 				SetPieceColor(i, Color.white);
+				NumActive--;
 				return;
 			}
 		}
@@ -50,6 +53,7 @@ public class ColorBar : MonoBehaviour {
 			SpriteRenderer pieceRenderer = Pieces[i].GetComponent<SpriteRenderer>();
 			pieceRenderer.color = Color.white;
 		}
+		NumActive = 0;
 	}
 
 

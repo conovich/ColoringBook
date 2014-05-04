@@ -44,8 +44,12 @@ public class Colorable : MonoBehaviour {
 	//COLLISION FUNCTIONS
 	void OnTriggerEnter2D(Collider2D collider){
 		if(collider.gameObject.tag == "Bucket"){
-			myBucket = collider.gameObject.GetComponent<Bucket>();
-			ChangeColor(myBucket.MyColor);
+			if(Input.GetMouseButton(0)){
+				myBucket = collider.gameObject.GetComponent<Bucket>();
+				if(myBucket.MyColorBar.NumActive > 0){
+					ChangeColor(myBucket.MyColor);
+				}
+			}
 		}
 	}
 
