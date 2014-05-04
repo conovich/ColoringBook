@@ -4,9 +4,19 @@ using System.Collections;
 public class Bucket : MonoBehaviour {
 	public ColorBar MyColorBar;
 	public GUIText MyColorLabel;
+	public Color MyColor = Color.white;
 
-	private Color MyColor = Color.white;
 	private int particleCount;
+
+
+	public enum ColorName{
+		Yellow,
+		Green,
+		Blue,
+		Pink
+	}
+
+	public ColorName myColorName;
 
 	// Use this for initialization
 	void Start () {
@@ -22,20 +32,20 @@ public class Bucket : MonoBehaviour {
 	}
 
 	void SetColors(){
-		switch(gameObject.tag){
-		case "Yellow":
+		switch(myColorName){
+		case ColorName.Yellow:
 			SetMyColor(GlobalColors.Instance.yellow);
 			SetTextColor(GlobalColors.Instance.yellow);
 			break;
-		case "Blue":
+		case ColorName.Blue:
 			SetMyColor(GlobalColors.Instance.blue);
 			SetTextColor(GlobalColors.Instance.blue);
 			break;
-		case "Green":
+		case ColorName.Green:
 			SetMyColor(GlobalColors.Instance.green);
 			SetTextColor(GlobalColors.Instance.green);
 			break;
-		case "Pink":
+		case ColorName.Pink:
 			SetMyColor(GlobalColors.Instance.pink);
 			SetTextColor(GlobalColors.Instance.pink);
 			break;
@@ -53,8 +63,9 @@ public class Bucket : MonoBehaviour {
 		MyColorLabel.color = newColor;
 	}
 
-	void OnCollisionEnter2D(Collision2D collision){
-		if(collision.gameObject.tag == gameObject.tag){ //colors match
+	void OnTriggerEnter2D(Collider2D collider){
+		Debug.Log("Bucket Collision!");
+		if(collider.gameObject.tag == myColorName.ToString()){ //colors match
 			particleCount++;
 		}
 	}
