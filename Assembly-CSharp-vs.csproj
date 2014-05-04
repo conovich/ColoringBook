@@ -54,7 +54,6 @@
      <Compile Include="Assets\Scripts\Colorable.cs" />
      <Compile Include="Assets\Scripts\ColorableButton.cs" />
      <Compile Include="Assets\Scripts\ColorableButtonMaker.cs" />
-     <Compile Include="Assets\Scripts\ColorsGUI.cs" />
      <Compile Include="Assets\Scripts\GlobalColors.cs" />
      <Compile Include="Assets\Scripts\LabelFollow.cs" />
      <Compile Include="Assets\Scripts\ParticleScripts\ParticleCollision.cs" />

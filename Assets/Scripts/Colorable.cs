@@ -28,4 +28,8 @@ public class Colorable : MonoBehaviour {
 	void OnMouseDown(){
 		Selector.Instance.SelectColorable(gameObject);
 	}
+
+	void OnCollisionEnter2D(){
+		
+	}
 }
