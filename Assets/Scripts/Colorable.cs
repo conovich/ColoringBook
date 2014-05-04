@@ -5,6 +5,7 @@ public class Colorable : MonoBehaviour {
 	public GameObject SelectionIndicator;
 
 	private Color currentColor;
+	private Bucket myBucket;
 	
 
 
@@ -43,15 +44,26 @@ public class Colorable : MonoBehaviour {
 	//COLLISION FUNCTIONS
 	void OnTriggerEnter2D(Collider2D collider){
 		if(collider.gameObject.tag == "Bucket"){
-			Bucket myBucket = collider.gameObject.GetComponent<Bucket>();
+			myBucket = collider.gameObject.GetComponent<Bucket>();
 			ChangeColor(myBucket.MyColor);
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D collider){
 		if(collider.gameObject.tag == "Bucket"){
-			Bucket myBucket = collider.gameObject.GetComponent<Bucket>();
-			ChangeColor(currentColor);
+			if(Input.GetMouseButton(0)){ //bucket not let go
+				ChangeColor(currentColor);
+			}
+			else{ //mouse was let go
+				SpriteRenderer myRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+				//if the currentColor isn't the temp color, change the currentColor, remove piece
+				//otherwise, colorable was this color to begin with.
+				if(currentColor != myRenderer.color){
+					myBucket.MyColorBar.RemoveNextPieceColor();
+					currentColor = myRenderer.color;
+				}
+			}
 		}
 	}
 

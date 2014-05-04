@@ -64,7 +64,6 @@ public class Bucket : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
-		Debug.Log("Bucket Collision!");
 		if(collider.gameObject.tag == myColorName.ToString()){ //colors match
 			particleCount++;
 		}
