@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//particles already won't collide with other particles due to collision layer settings.
+//particles already won't collide with colorables due to collision layer settings.
+
 public class ParticleCollision : MonoBehaviour {
-	public string ParentName;
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -15,10 +17,7 @@ public class ParticleCollision : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision){
-		if(collision.gameObject.name != ParentName && collision.gameObject.name != gameObject.name){
-			//Debug.Log(collision.gameObject.name);
-			Die();
-		}
+		Die();
 	}
 
 	void Die(){

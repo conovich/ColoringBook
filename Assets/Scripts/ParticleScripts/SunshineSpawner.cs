@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SunshineSpawner : ParticleSpawner {
-	public GameObject SunShine;
+	public Rigidbody2D SunShine;
 	
 	private int randomCountdownToSun = 0;
 
@@ -27,7 +27,9 @@ public class SunshineSpawner : ParticleSpawner {
 	
 	override public void EmitParticles(){
 		Vector2 spawnPos = transform.position;
-		GameObject.Instantiate(SunShine, spawnPos, Quaternion.identity);
+		Rigidbody2D sunShineParticle;
+		sunShineParticle = GameObject.Instantiate(SunShine, spawnPos, Quaternion.identity) as Rigidbody2D;
 		//add in velocity here!
+		sunShineParticle.AddForce(Random.insideUnitCircle);
 	}
 }

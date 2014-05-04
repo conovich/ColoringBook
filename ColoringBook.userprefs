@@ -11,7 +11,7 @@
       <File FileName="Assets/Scripts/Colorable.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GlobalColors.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ColorBar.cs" Line="41" Column="38" />
-      <File FileName="Assets/Scripts/ParticleScripts/SunshineSpawner.cs" Line="32" Column="67" />
+      <File FileName="Assets/Scripts/ParticleScripts/SunshineSpawner.cs" Line="32" Column="52" />
       <File FileName="Assets/Scripts/ParticleScripts/ParticleSpawner.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ParticleScripts/RainSpawner.cs" Line="5" Column="2" />
     </Files>
@@ -22,6 +22,7 @@
       <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="27" />
       <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="34" />
       <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ColorBar.cs" line="40" />
+      <Breakpoint file="/Users/Corey/Desktop/repos/ColoringBook/Assets/Scripts/ParticleScripts/SunshineSpawner.cs" line="29" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
