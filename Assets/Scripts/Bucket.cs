@@ -77,5 +77,18 @@ public class Bucket : MonoBehaviour {
 		MyColorBar.RemoveNextPieceColor();
 	}
 
+
+	//work off this if I feel like doing select & tap to color.
+	/*
+	//if tapped and there exists a selected object!
+	void OnMouseDown(){
+		if(Selector.Instance.selected != null && MyColorBar.NumActive > 0){
+			Colorable myColorable = Selector.Instance.selected.GetComponent<Colorable>();
+			myColorable.MyBucket = this;
+			myColorable.ColorObjectPermanently(MyColor);
+		}
+	}
+	*/
+
 	
 }

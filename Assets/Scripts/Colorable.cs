@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Colorable : MonoBehaviour {
 	public GameObject SelectionIndicator;
+	public Bucket MyBucket;
 
 	private Color currentColor;
-	private Bucket myBucket;
 	
 
 
@@ -40,14 +40,13 @@ public class Colorable : MonoBehaviour {
 		Selector.Instance.SelectColorable(gameObject);
 	}
 
-
 	//COLLISION FUNCTIONS
 	void OnTriggerEnter2D(Collider2D collider){
 		if(collider.gameObject.tag == "Bucket"){
 			if(Input.GetMouseButton(0)){
-				myBucket = collider.gameObject.GetComponent<Bucket>();
-				if(myBucket.MyColorBar.NumActive > 0){
-					ChangeColor(myBucket.MyColor);
+				MyBucket = collider.gameObject.GetComponent<Bucket>();
+				if(MyBucket.MyColorBar.NumActive > 0){
+					ChangeColor(MyBucket.MyColor);
 				}
 			}
 		}
@@ -64,11 +63,16 @@ public class Colorable : MonoBehaviour {
 				//if the currentColor isn't the temp color, change the currentColor, remove piece
 				//otherwise, colorable was this color to begin with.
 				if(currentColor != myRenderer.color){
-					myBucket.MyColorBar.RemoveNextPieceColor();
-					currentColor = myRenderer.color;
+					ColorObjectPermanently(myRenderer.color);
 				}
 			}
 		}
+	}
+
+	public void ColorObjectPermanently(Color newColor){
+		MyBucket.MyColorBar.RemoveNextPieceColor();
+		ChangeColor(newColor);
+		currentColor = newColor;
 	}
 
 	void ChangeColor(Color newColor){
