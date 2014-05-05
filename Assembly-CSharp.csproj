@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\ClickDragSnap.cs" />
      <Compile Include="Assets\Scripts\ColorBar.cs" />
      <Compile Include="Assets\Scripts\ColorButton.cs" />
+     <Compile Include="Assets\Scripts\ColorLerper2D.cs" />
      <Compile Include="Assets\Scripts\Colorable.cs" />
      <Compile Include="Assets\Scripts\GlobalColors.cs" />
      <Compile Include="Assets\Scripts\LabelFollow.cs" />

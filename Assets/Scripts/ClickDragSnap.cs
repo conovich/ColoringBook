@@ -37,7 +37,7 @@ public class ClickDragSnap : MonoBehaviour
 	}
 
 	void OnMouseDown(){
-		Debug.Log("mouseDown");
+		//Debug.Log("mouseDown");
 		if(bucketSelector.SelectedBucket == null){
 			isSelected = true;
 			mouseOffset = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;

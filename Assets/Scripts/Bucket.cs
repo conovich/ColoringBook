@@ -6,7 +6,7 @@ public class Bucket : MonoBehaviour {
 	public GUIText MyColorLabel;
 	public Color MyColor = Color.white;
 
-	private int particleCount;
+	public int particleCount;
 
 
 	public enum ColorName{
@@ -25,7 +25,7 @@ public class Bucket : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(particleCount == 3){
+		if(particleCount >= 3){
 			AddColorBarPiece();
 			particleCount = 0;
 		}
