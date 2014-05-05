@@ -5,7 +5,7 @@ public class RainSpawner : ParticleSpawner {
 	public GameObject RainDrop;
 	public float Width;
 
-	private int randomCountdownToRain = 0;
+	private int randomCountdownToFall = 0;
 
 
 	// Use this for initialization
@@ -20,11 +20,11 @@ public class RainSpawner : ParticleSpawner {
 	}
 
 	override public void CountDown(){
-		if(randomCountdownToRain <= 0){
+		if(randomCountdownToFall <= 0){
 			EmitParticles();
-			randomCountdownToRain = Random.Range(1, 20);
+			randomCountdownToFall = Random.Range(1, 20);
 		}
-		randomCountdownToRain--;
+		randomCountdownToFall--;
 	}
 
 	override public void EmitParticles(){

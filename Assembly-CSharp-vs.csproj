@@ -54,8 +54,10 @@
      <Compile Include="Assets\Scripts\Colorable.cs" />
      <Compile Include="Assets\Scripts\GlobalColors.cs" />
      <Compile Include="Assets\Scripts\LabelFollow.cs" />
+     <Compile Include="Assets\Scripts\ParticleScripts\LeafSpawner.cs" />
      <Compile Include="Assets\Scripts\ParticleScripts\ParticleCollision.cs" />
      <Compile Include="Assets\Scripts\ParticleScripts\ParticleSpawner.cs" />
+     <Compile Include="Assets\Scripts\ParticleScripts\PetalSpawner.cs" />
      <Compile Include="Assets\Scripts\ParticleScripts\RainSpawner.cs" />
      <Compile Include="Assets\Scripts\ParticleScripts\SunshineSpawner.cs" />
      <Compile Include="Assets\Scripts\Selector.cs" />
