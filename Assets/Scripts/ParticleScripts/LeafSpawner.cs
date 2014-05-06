@@ -6,6 +6,7 @@ public class LeafSpawner : ParticleSpawner {
 	public float VelocityMult;
 	
 	private int randomCountdownToFall = 0;
+	private bool isOn = false;
 
 
 	// Use this for initialization
@@ -15,7 +16,9 @@ public class LeafSpawner : ParticleSpawner {
 	
 	// Update is called once per frame
 	void Update () {
-		CountDown();
+		if(isOn){
+			CountDown();
+		}
 	}
 
 	override public void CountDown(){
@@ -34,5 +37,14 @@ public class LeafSpawner : ParticleSpawner {
 		leafParticle.AddForce(VelocityMult*(Random.insideUnitCircle));
 
 		//randomize rotation
+		leafParticle.AddTorque(Random.Range(0.0f, 50.0f));
+	}
+
+	override public void TurnOn(){
+		isOn = true;
+	}
+	
+	override public void TurnOff(){
+		isOn = false;
 	}
 }

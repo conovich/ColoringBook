@@ -6,6 +6,7 @@ public class RainSpawner : ParticleSpawner {
 	public float Width;
 
 	private int randomCountdownToFall = 0;
+	private bool isOn = false;
 
 
 	// Use this for initialization
@@ -15,8 +16,9 @@ public class RainSpawner : ParticleSpawner {
 	
 	// Update is called once per frame
 	void Update () {
-		CountDown();
-
+		if(isOn){
+			CountDown();
+		}
 	}
 
 	override public void CountDown(){
@@ -33,4 +35,12 @@ public class RainSpawner : ParticleSpawner {
 		GameObject.Instantiate(RainDrop, spawnPos, Quaternion.identity);
 	}
 
+	override public void TurnOn(){
+		isOn = true;
+	}
+	
+	override public void TurnOff(){
+		isOn = false;
+	}
+	
 }

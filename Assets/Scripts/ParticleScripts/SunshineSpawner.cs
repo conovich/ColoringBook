@@ -6,6 +6,7 @@ public class SunshineSpawner : ParticleSpawner {
 	public float VelocityMult;
 	
 	private int randomCountdownToFall = 0;
+	private bool isOn = false;
 
 
 	// Use this for initialization
@@ -15,7 +16,9 @@ public class SunshineSpawner : ParticleSpawner {
 	
 	// Update is called once per frame
 	void Update () {
-		CountDown();
+		if(isOn){
+			CountDown();
+		}
 	}
 
 	override public void CountDown(){
@@ -32,5 +35,13 @@ public class SunshineSpawner : ParticleSpawner {
 		sunShineParticle = GameObject.Instantiate(SunShine, spawnPos, Quaternion.identity) as Rigidbody2D;
 
 		sunShineParticle.AddForce(VelocityMult*(Random.insideUnitCircle));
+	}
+
+	override public void TurnOn(){
+		isOn = true;
+	}
+	
+	override public void TurnOff(){
+		isOn = false;
 	}
 }

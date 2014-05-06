@@ -35,19 +35,19 @@ public class Bucket : MonoBehaviour {
 		switch(myColorName){
 		case ColorName.Yellow:
 			SetMyColor(GlobalColors.Instance.yellow);
-			SetTextColor(GlobalColors.Instance.yellow);
+			//SetTextColor(GlobalColors.Instance.yellow);
 			break;
 		case ColorName.Blue:
 			SetMyColor(GlobalColors.Instance.blue);
-			SetTextColor(GlobalColors.Instance.blue);
+			//SetTextColor(GlobalColors.Instance.blue);
 			break;
 		case ColorName.Green:
 			SetMyColor(GlobalColors.Instance.green);
-			SetTextColor(GlobalColors.Instance.green);
+			//SetTextColor(GlobalColors.Instance.green);
 			break;
 		case ColorName.Pink:
 			SetMyColor(GlobalColors.Instance.pink);
-			SetTextColor(GlobalColors.Instance.pink);
+			//SetTextColor(GlobalColors.Instance.pink);
 			break;
 		}
 	}

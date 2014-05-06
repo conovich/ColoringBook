@@ -2,7 +2,7 @@
 using System.Collections;
 
 public abstract class ParticleSpawner : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -16,4 +16,8 @@ public abstract class ParticleSpawner : MonoBehaviour {
 	public abstract void CountDown();
 
 	public abstract void EmitParticles();
+
+	public abstract void TurnOn();
+
+	public abstract void TurnOff();
 }

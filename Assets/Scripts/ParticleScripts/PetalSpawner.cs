@@ -6,6 +6,7 @@ public class PetalSpawner : ParticleSpawner {
 	public float VelocityMult;
 	
 	private int randomCountdownToFall = 0;
+	private bool isOn = false;
 
 
 	// Use this for initialization
@@ -15,7 +16,9 @@ public class PetalSpawner : ParticleSpawner {
 	
 	// Update is called once per frame
 	void Update () {
-		CountDown();
+		if(isOn){
+			CountDown();
+		}
 	}
 
 	override public void CountDown(){
@@ -38,5 +41,13 @@ public class PetalSpawner : ParticleSpawner {
 		petalParticle.AddForce(VelocityMult*(Random.insideUnitCircle));
 
 		//randomize rotation
+	}
+
+	override public void TurnOn(){
+		isOn = true;
+	}
+	
+	override public void TurnOff(){
+		isOn = false;
 	}
 }
